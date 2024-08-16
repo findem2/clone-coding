@@ -66,4 +66,4 @@ jobs:
             mkdir /var/www/html'
           rsync -avz -e "ssh" ./build/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/html
         # 원격접속기로 ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}서버에 /var/www/front위치 있는걸 삭제하고 새로 생성
-        # rsync를 사용하여 ./query-test/build/ 폴더를 EC2 유저로 EC2 인스턴스(HOST)에 접속해서 /var/www/html 폴더에 복사해달라
+        # rsync를 사용하여 ./query-test/build/ 폴더를 EC2 유저로 EC2 인스턴스(HOST)에 접속해서 /var/www/html 폴더에 복사해달라.
