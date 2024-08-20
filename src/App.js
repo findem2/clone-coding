@@ -1,7 +1,11 @@
+import NavbarBlack from "./components/navbar/navbarBlack";
+import NavbarFix from "./components/navbar/navbarFix";
+
 function App() {
   return (
     <div>
-      <div>checking</div>
+      <NavbarBlack></NavbarBlack>
+      <NavbarFix></NavbarFix>
     </div>
   );
 }
