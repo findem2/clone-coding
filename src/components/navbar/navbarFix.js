@@ -2,18 +2,17 @@ import logo from "../../img/svg/logo.svg";
 
 function NavbarFix() {
   return (
-    <div className="sticky top-0 bg-gray-500 flex justify-center items-center w-full">
-      <div className="flex-1">
+    <div className="flex justify-around py-2 sticky top-0 bg-white w-full">
+      <div className="flex flex-1 px-12">
         <img alt="logo" class="logo" className="w-56 h-8" src={logo}></img>
       </div>
-      <div className="flex flex-1 ">
-        <div>HEADPHONES 🔽</div>
-        <div>EARPHONES 🔽</div>
-        <div>ACCESSORIES 🔽</div>
+      <div className="flex flex-1 justify-center items-center">
+        <div>HEADPHONES ^ </div>
+        <div>EARPHONES ^ </div>
+        <div>ACCESSORIES ^ </div>
         <div>COLLABORATIONS</div>
         <div>BLOG</div>
       </div>
-
       <div className="flex flex-1">
         <svg
           role="presentation"
@@ -81,7 +80,7 @@ function NavbarFix() {
             stroke-linecap="round"
           ></path>
         </svg>
-        <div className="bg-black text-white w-24 h-10 text-base ">
+        <div className="bg-black text-white w-24 h-10 text-base justify-center items-center">
           support
           <input className="justify-center items-center" type="button"></input>
         </div>
