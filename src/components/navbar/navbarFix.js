@@ -4,7 +4,7 @@ function NavbarFix() {
   return (
     <div className="sticky top-0 bg-gray-500 flex justify-center items-center w-full">
       <div className="flex-1">
-        <img className="w-56 h-8" src={logo}></img>
+        <img alt="logo" class="logo" className="w-56 h-8" src={logo}></img>
       </div>
       <div className="flex flex-1 ">
         <div>HEADPHONES 🔽</div>

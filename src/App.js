@@ -7,36 +7,36 @@ function App() {
     <div>
       <NavbarBlack></NavbarBlack>
       <NavbarFix></NavbarFix>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
-      <img src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
+      <img alt="배경" src={logo}></img>
     </div>
   );
 }
