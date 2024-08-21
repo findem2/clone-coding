@@ -2,19 +2,47 @@ import logo from "../../img/svg/logo.svg";
 
 function NavbarFix() {
   return (
-    <div className="flex justify-around py-2 sticky top-0 bg-white w-full">
-      <div className="flex flex-1 px-12">
-        <img alt="logo" class="logo" className="w-56 h-8" src={logo}></img>
+    <div className="flex  justify-between py-2 px-12 sticky top-0 bg-white w-full gap-24 sm:bg-red-500 md:bg-gray-500 lg:bg-blue-500 xl:bg-orange-500 2xl:bg-pink-500">
+      <div className="flex items-center justify-center cursor-pointer">
+        <div
+          className="
+       
+        "
+        >
+          <div>
+            <div>
+              <div>
+                <img
+                  alt="logo"
+                  class="logo"
+                  className="min-w-56 max-w-56 min-h-8 max-h-8"
+                  src={logo}
+                ></img>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="flex flex-1 justify-center items-center">
-        <div>HEADPHONES ^ </div>
-        <div>EARPHONES ^ </div>
-        <div>ACCESSORIES ^ </div>
-        <div>COLLABORATIONS</div>
-        <div>BLOG</div>
+      <div className="flex  items-center">
+        <idiv>
+          <div className="mx-5 cursor-pointer hover:text-gray-700">
+            HEADPHONES ^{" "}
+          </div>
+        </idiv>
+        <div className="mx-5 cursor-pointer hover:text-gray-700">
+          EARPHONES ^{" "}
+        </div>
+        <div className="mx-5 cursor-pointer hover:text-gray-700">
+          ACCESSORIES ^{" "}
+        </div>
+        <div className="mx-5 cursor-pointer hover:text-gray-700">
+          COLLABORATIONS
+        </div>
+        <div className="mx-5 cursor-pointer hover:text-gray-700">BLOG</div>
       </div>
-      <div className="flex flex-1">
+      <div className="flex justify-between items-center">
         <svg
+          className="min-w-8 mr-3 cursor-pointer"
           role="presentation"
           focusable="false"
           width="30"
@@ -36,6 +64,7 @@ function NavbarFix() {
           ></path>
         </svg>
         <svg
+          className="mr-3 min-w-8 cursor-pointer"
           role="presentation"
           focusable="false"
           width="30"
@@ -56,6 +85,7 @@ function NavbarFix() {
           ></path>
         </svg>
         <svg
+          className="mr-3 cursor-pointer"
           role="presentation"
           focusable="false"
           width="28"
@@ -80,9 +110,16 @@ function NavbarFix() {
             stroke-linecap="round"
           ></path>
         </svg>
-        <div className="bg-black text-white w-24 h-10 text-base justify-center items-center">
-          support
-          <input className="justify-center items-center" type="button"></input>
+        <div className="mr-3 cursor-pointer">AT ^</div>
+        <div>
+          <button className="bg-black text-white w-24 h-10 text-base hover:bg-gray-700 xxl:hidden">
+            support
+          </button>
+          {/* <input
+            className="justify-center items-center text-white"
+            type="button"
+            placeholder="support"
+          ></input> */}
         </div>
       </div>
     </div>
