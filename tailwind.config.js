@@ -2,9 +2,8 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
-    breakpoints: {
-      sm: "576px",
+    screens: {
+      sm: "1px",
       md: "700px",
       lg: "1000px",
       xl: "1220px",

@@ -2,13 +2,53 @@ import logo from "../../img/svg/logo.svg";
 
 function NavbarFix() {
   return (
-    <div className="flex  justify-between py-2 px-12 sticky top-0 bg-white w-full gap-24 sm:bg-red-500 md:bg-gray-500 lg:bg-blue-500 xl:bg-orange-500 2xl:bg-pink-500">
+    <div className="flex min-h-14 justify-between py-2 px-12 sticky top-0 bg-white w-full gap-24 sm:bg-red-500 md:bg-gray-500 lg:bg-blue-500 xl:bg-orange-500 xxl:bg-pink-500">
+      <div className="flex items-center justify-center ">
+        <div className="flex items-center justify-center  xl:hidden mr-3 cursor-pointer">
+          <svg
+            className="flex items-center justify-center cursor-pointer"
+            role="presentation"
+            stroke-width="2"
+            focusable="false"
+            width="22"
+            height="22"
+            class="icon icon-hamburger"
+            viewBox="0 0 22 22"
+          >
+            <path
+              d="M1 5h20M1 11h20M1 17h20"
+              stroke="currentColor"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </div>
+        <div className="flex items-center justify-center  md:hidden cursor-pointer">
+          <svg
+            className="flex items-center justify-center cursor-pointer"
+            role="presentation"
+            focusable="false"
+            width="30"
+            height="30"
+            class="icon icon-search"
+            viewBox="0 0 30 30"
+          >
+            <circle
+              cx="13.125"
+              cy="13.125"
+              r="7.5"
+              stroke="#4A4A4A"
+              fill="none"
+              stroke-width="1.25"
+            ></circle>
+            <path
+              d="M24.5581 25.4419C24.8021 25.686 25.1979 25.686 25.4419 25.4419C25.686 25.1979 25.686 24.8021 25.4419 24.5581L24.5581 25.4419ZM25.4419 24.5581L19.1919 18.3081L18.3081 19.1919L24.5581 25.4419L25.4419 24.5581Z"
+              fill="#4A4A4A"
+            ></path>
+          </svg>
+        </div>
+      </div>
       <div className="flex items-center justify-center cursor-pointer">
-        <div
-          className="
-       
-        "
-        >
+        <div className=" ">
           <div>
             <div>
               <div>
@@ -23,26 +63,28 @@ function NavbarFix() {
           </div>
         </div>
       </div>
-      <div className="flex  items-center">
-        <idiv>
-          <div className="mx-5 cursor-pointer hover:text-gray-700">
-            HEADPHONES ^{" "}
+      <div className="flex items-center justify-center sm:hidden xl:inline-flex ">
+        <div className="flex items-center justify-center ">
+          <div className="flex items-center justify-center ">
+            <div className="mx-5 cursor-pointer hover:text-gray-700">
+              HEADPHONES^{" "}
+            </div>
+            <div className="mx-5 cursor-pointer hover:text-gray-700">
+              EARPHONES^{" "}
+            </div>
+            <div className="mx-5 cursor-pointer hover:text-gray-700">
+              ACCESSORIES^{" "}
+            </div>
+            <div className="mx-5 cursor-pointer hover:text-gray-700">
+              COLLABORATIONS
+            </div>
+            <div className="mx-5 cursor-pointer hover:text-gray-700">BLOG</div>
           </div>
-        </idiv>
-        <div className="mx-5 cursor-pointer hover:text-gray-700">
-          EARPHONES ^{" "}
         </div>
-        <div className="mx-5 cursor-pointer hover:text-gray-700">
-          ACCESSORIES ^{" "}
-        </div>
-        <div className="mx-5 cursor-pointer hover:text-gray-700">
-          COLLABORATIONS
-        </div>
-        <div className="mx-5 cursor-pointer hover:text-gray-700">BLOG</div>
       </div>
       <div className="flex justify-between items-center">
         <svg
-          className="min-w-8 mr-3 cursor-pointer"
+          className="min-w-8 cursor-pointer md:inline hidden cursor-pointer"
           role="presentation"
           focusable="false"
           width="30"
@@ -110,9 +152,9 @@ function NavbarFix() {
             stroke-linecap="round"
           ></path>
         </svg>
-        <div className="mr-3 cursor-pointer">AT ^</div>
-        <div>
-          <button className="bg-black text-white w-24 h-10 text-base hover:bg-gray-700 xxl:hidden">
+        <div className="hidden lg:inline mr-3 cursor-pointer">AT^</div>
+        <div className="">
+          <button className="hidden xxl:inline bg-black text-white w-24 h-10 text-base hover:bg-gray-700 ">
             support
           </button>
           {/* <input
