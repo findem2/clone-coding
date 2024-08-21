@@ -10,7 +10,7 @@ on:
       # develop 브런치에
 
 jobs:
-  # 해야 할 일 목록
+  # 해야 할 일 목록.
   deploy_front:
     #  프론트 배포
     runs-on: ubuntu-latest
