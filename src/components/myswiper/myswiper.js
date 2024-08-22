@@ -24,30 +24,21 @@ const MySwiper = () => {
   //   bulletClass: "w-4 h-4 rounded-lg bg-black inline-block",
   //   bulletActiveClass: "bg-red-500 w-20",
   // };
+
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay, EffectFade, Parallax]}
+      allowTouchMove={false}
       direction={"horizontal"}
       centeredSlides={true}
       loop={true}
       parallax={true}
       effect={"fade"}
       autoplay={{ delay: 10000, pauseOnMouseEnter: false }}
-      // pagination={{
-      //   el: "#containerForBullets",
-      //   type: "bullets",
-      //   bulletClass: "swiper-custom-bullet",
-      //   bulletActiveClass: "swiper-custom-bullet-active",
-      //   clickable: true,
-      // }}
       pagination={{
-        // el: ".swiper-pagination",
-
-        // type: "fraction",
-
         bulletClass:
-          "w-2 h-2 rounded-lg bg-gray-700 inline-block m-5 cursor-pointer",
-        bulletActiveClass: "bg-slate-50 w-20 px-3",
+          "float-end w-2 h-2 rounded-lg bg-gray-700 inline-block m-5 cursor-pointer mb-24",
+        bulletActiveClass: "bg-slate-50 w-10 px-3",
         clickable: true,
       }}
       navigation={
@@ -60,63 +51,91 @@ const MySwiper = () => {
       }
       className="w-full"
     >
-      {/* <div
-        slot="container-start"
-        className="parallax-bg"
-        style={{
-          "background-image": image1,
-        }}
-        data-swiper-parallax="100%"
-      ></div>
-      <SwiperSlide>
-        <div className="title" data-swiper-parallax="2000">
-          Slide 1
+      <SwiperSlide className="flex items-center justify-center relative">
+        <div className=" absolute bottom-0 p-16  ">
+          <div className="title text-5xl" data-swiper-parallax="2000">
+            MW09 True Wireless Earphones
+          </div>
+          <div className="text" data-swiper-parallax="2000">
+            Our newest active noise-cancelling earphones
+          </div>
+          <button
+            className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 "
+            data-swiper-parallax="2000"
+          >
+            Shop Now
+          </button>
         </div>
-        <div className="subtitle" data-swiper-parallax="2000">
-          Subtitle
-        </div>
-        <div className="text" data-swiper-parallax="2000">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
-            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-            libero. Aenean feugiat non eros quis feugiat.
-          </p>
-        </div>
+        <img
+          src={image1}
+          alt="Slide 1"
+          className="object-cover w-full  min-h-full"
+        />
       </SwiperSlide>
-      <SwiperSlide>
-        <div className="title" data-swiper-parallax="2000">
-          Slide 2
+      <SwiperSlide className="flex items-center justify-center relative">
+        <div className="absolute bottom-0 p-16 ">
+          <div className="title text-5xl" data-swiper-parallax="2000">
+            MG20 Wireless Gaming
+            <p>Headphones</p>
+          </div>
+          <div className="text" data-swiper-parallax="2000">
+            Never Play the Same
+          </div>
+          <button
+            className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 "
+            data-swiper-parallax="2000"
+          >
+            Shop Now
+          </button>
         </div>
-        <div className="subtitle" data-swiper-parallax="2000">
-          Subtitle
+        <img
+          src={image2}
+          alt="Slide 2"
+          className="object-cover w-full min-h-full"
+        />
+      </SwiperSlide>
+      <SwiperSlide className="flex items-center justify-center relative">
+        <div className="absolute bottom-0 p-16 ">
+          <div className="title text-5xl" data-swiper-parallax="2000">
+            MW75 Active Noise-Cancelling
+            <p>Wireless Headphones</p>
+          </div>
+          <div className="text" data-swiper-parallax="2000">
+            Perfect silence, perfect sound
+          </div>
+          <button
+            className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 "
+            data-swiper-parallax="2000"
+          >
+            Shop Now
+          </button>
         </div>
-        <div className="text" data-swiper-parallax="2000">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
-            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-            libero. Aenean feugiat non eros quis feugiat.
-          </p>
+        <img
+          src={image3}
+          alt="Slide 3"
+          className="object-cover w-full min-h-full"
+        />
+      </SwiperSlide>
+      <SwiperSlide className="flex items-center justify-center relative">
+        <div className="absolute bottom-0 p-16 ">
+          <div className="title text-5xl" data-swiper-parallax="2000">
+            MH40 Wireless Headphones
+          </div>
+          <div className="text" data-swiper-parallax="2000">
+            Iconic design and brilliant acoustics
+          </div>
+          <button
+            className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 "
+            data-swiper-parallax="2000"
+          >
+            Shop Now
+          </button>
         </div>
-      </SwiperSlide> */}
-      <SwiperSlide className="flex items-center justify-center">
-        <img src={image1} alt="Slide 1" className="object-cover w-full" />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center">
-        <img src={image2} alt="Slide 2" className="object-cover w-full" />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center">
-        <img src={image3} alt="Slide 3" className="object-cover w-full" />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center">
-        <img src={image4} alt="Slide 4" className="object-cover w-full" />
+        <img
+          src={image4}
+          alt="Slide 4"
+          className="object-cover w-full min-h-full"
+        />
       </SwiperSlide>
       {/* Navigation buttons */}
       {/* <div className="swiper-button-next text-white bg-black p-2 rounded-full"></div>

@@ -15,7 +15,7 @@ function App() {
       <NavbarBlack></NavbarBlack>
       <NavbarFix></NavbarFix>
       <MySwiper></MySwiper>
-      <Swipe></Swipe>
+      {/* <Swipe></Swipe> */}
       {/* <HeroSlider></HeroSlider> */}
       {/* <Slide></Slide> */}
       <img alt="배경" src={logo}></img>

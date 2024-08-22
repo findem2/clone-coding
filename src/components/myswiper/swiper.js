@@ -44,7 +44,7 @@ function Swipe() {
         style={{
           "background-image": { image1 },
         }}
-        data-swiper-parallax="-23%"
+        data-swiper-parallax="100%"
       ></div>
       <SwiperSlide className="flex relative overflow-hidden">
         <img
@@ -70,6 +70,7 @@ function Swipe() {
               tincidunt ut libero. Aenean feugiat non eros quis feugiat.
             </p>
           </div>
+          <button>search</button>
         </div>
       </SwiperSlide>
 
@@ -91,6 +92,7 @@ function Swipe() {
             velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
             libero. Aenean feugiat non eros quis feugiat.
           </p>
+          <button>search</button>
         </div>
       </SwiperSlide>
       <SwiperSlide>
