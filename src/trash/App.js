@@ -17,24 +17,24 @@ function App() {
           FREE US GROUND SHIPPING ON ORDERS OF $99 OR MORE. FREE GROUND SHIPPING
           IN CANADA ON ORDERS OF $250 OR MORE
         </div>
-        <div class="navbar">
-          <div class="logo">
-            <img class="logo_svg" src={logo}></img>
+        <div className"navbar">
+          <div className"logo">
+            <img className"logo_svg" src={logo}></img>
           </div>
-          <div class="menu menu1">
+          <div className"menu menu1">
             <div>HEADPHONES 🔽</div>
             <div>EARPHONES 🔽</div>
             <div>ACCESSORIES 🔽</div>
             <div>COLLABORATIONS</div>
             <div>BLOG</div>
           </div>
-          <div class="icon">
+          <div className"icon">
             <svg
               role="presentation"
               focusable="false"
               width="30"
               height="30"
-              class="icon icon-search"
+              className"icon icon-search"
               viewBox="0 0 30 30"
             >
               <circle
@@ -43,7 +43,7 @@ function App() {
                 r="7.5"
                 stroke="#4A4A4A"
                 fill="none"
-                stroke-width="1.25"
+                strokeWidth="1.25"
               ></circle>
               <path
                 d="M24.5581 25.4419C24.8021 25.686 25.1979 25.686 25.4419 25.4419C25.686 25.1979 25.686 24.8021 25.4419 24.5581L24.5581 25.4419ZM25.4419 24.5581L19.1919 18.3081L18.3081 19.1919L24.5581 25.4419L25.4419 24.5581Z"
@@ -54,19 +54,19 @@ function App() {
             <img src={cart} />
             <div>US</div>
             <div>
-              <button class="support">support</button>
+              <button className"support">support</button>
             </div>
           </div>
         </div>
       </header>
       <body>
-        <div class="slide">
+        <div className"slide">
           <img src={slide1}></img>
           <img src={slide2}></img>
           <img src={slide3}></img>
           <img src={slide4}></img>
         </div>
-        <div class="FeaturedProducts">
+        <div className"FeaturedProducts">
           <div>Featured Products</div>
           <div>
             <img src={MW09}></img>

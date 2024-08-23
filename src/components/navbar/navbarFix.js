@@ -8,7 +8,7 @@ function NavbarFix() {
           <svg
             className="flex items-center justify-center cursor-pointer"
             role="presentation"
-            stroke-width="2"
+            strokeWidth="2"
             focusable="false"
             width="22"
             height="22"
@@ -18,7 +18,7 @@ function NavbarFix() {
             <path
               d="M1 5h20M1 11h20M1 17h20"
               stroke="currentColor"
-              stroke-linecap="round"
+              strokeLinecap="round"
             ></path>
           </svg>
         </div>
@@ -38,7 +38,7 @@ function NavbarFix() {
               r="7.5"
               stroke="#4A4A4A"
               fill="none"
-              stroke-width="1.25"
+              strokeWidth="1.25"
             ></circle>
             <path
               d="M24.5581 25.4419C24.8021 25.686 25.1979 25.686 25.4419 25.4419C25.686 25.1979 25.686 24.8021 25.4419 24.5581L24.5581 25.4419ZM25.4419 24.5581L19.1919 18.3081L18.3081 19.1919L24.5581 25.4419L25.4419 24.5581Z"
@@ -90,7 +90,7 @@ function NavbarFix() {
               r="7.5"
               stroke="#4A4A4A"
               fill="none"
-              stroke-width="1.25"
+              strokeWidth="1.25"
             ></circle>
             <path
               d="M24.5581 25.4419C24.8021 25.686 25.1979 25.686 25.4419 25.4419C25.686 25.1979 25.686 24.8021 25.4419 24.5581L24.5581 25.4419ZM25.4419 24.5581L19.1919 18.3081L18.3081 19.1919L24.5581 25.4419L25.4419 24.5581Z"
@@ -135,14 +135,14 @@ function NavbarFix() {
             width="16.25"
             height="16.25"
             stroke="#4A4A4A"
-            stroke-width="1.25"
+            strokeWidth="1.25"
             stroke-linejoin="round"
           ></rect>
           <path
             d="M10 11.25V8.4375C10 5.84867 12.2386 3.75 15 3.75C17.7614 3.75 20 5.84867 20 8.4375V11.25"
             stroke="#4A4A4A"
-            stroke-width="1.25"
-            stroke-linecap="round"
+            strokeWidth="1.25"
+            strokeLinecap="round"
           ></path>
         </svg>
         <div className="hidden lg:inline mr-3 cursor-pointer">AT^</div>

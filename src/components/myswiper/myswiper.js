@@ -34,12 +34,13 @@ const MySwiper = () => {
       loop={true}
       parallax={true}
       effect={"fade"}
-      autoplay={{ delay: 10000, pauseOnMouseEnter: false }}
+      autoplay={{ delay: 60000, pauseOnMouseEnter: false }}
       pagination={{
         bulletClass:
-          "float-end w-2 h-2 rounded-lg bg-gray-700 inline-block m-5 cursor-pointer mb-24",
+          " float-end w-2 h-2 rounded-lg bg-gray-700 inline-block m-5 mt-0 cursor-pointer mb-24",
         bulletActiveClass: "bg-slate-50 w-10 px-3",
         clickable: true,
+        horizontalClass: "w-auto",
       }}
       navigation={
         {
@@ -52,6 +53,11 @@ const MySwiper = () => {
       className="w-full"
     >
       <SwiperSlide className="flex items-center justify-center relative">
+        <img
+          src={image1}
+          alt="Slide 1"
+          className="object-cover w-full  min-h-full"
+        />
         <div className=" absolute bottom-0 p-16  ">
           <div className="title text-5xl" data-swiper-parallax="2000">
             MW09 True Wireless Earphones
@@ -66,11 +72,6 @@ const MySwiper = () => {
             Shop Now
           </button>
         </div>
-        <img
-          src={image1}
-          alt="Slide 1"
-          className="object-cover w-full  min-h-full"
-        />
       </SwiperSlide>
       <SwiperSlide className="flex items-center justify-center relative">
         <div className="absolute bottom-0 p-16 ">
@@ -125,7 +126,7 @@ const MySwiper = () => {
             Iconic design and brilliant acoustics
           </div>
           <button
-            className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 "
+            className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 z-50"
             data-swiper-parallax="2000"
           >
             Shop Now
