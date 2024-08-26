@@ -24,7 +24,7 @@ import slice2 from "../../img/slide/700-2.webp";
 import slice3 from "../../img/slide/700-3.webp";
 import slice4 from "../../img/slide/700-4.webp";
 
-const MySwiper = () => {
+const MiSwiper = () => {
   // const pagination = {
   //   clickable: true,
   //   bulletClass: "w-4 h-4 rounded-lg bg-black inline-block",
@@ -241,4 +241,4 @@ const MySwiper = () => {
   );
 };
 
-export default MySwiper;
+export default MiSwiper;
