@@ -19,6 +19,10 @@ import image3 from "../../img/slide/slide3.jpg";
 import image4 from "../../img/slide/slide4.jpg";
 import PlayIcon from "../icon/play";
 import PauseIcon from "../icon/pause";
+import slice1 from "../../img/slide/700-1.webp";
+import slice2 from "../../img/slide/700-2.webp";
+import slice3 from "../../img/slide/700-3.webp";
+import slice4 from "../../img/slide/700-4.webp";
 
 const MySwiper = () => {
   // const pagination = {
@@ -81,12 +85,23 @@ const MySwiper = () => {
       className="w-full relative"
     >
       <SwiperSlide className="flex items-center justify-center relative">
-        <img
+        <picture>
+          <source srcset={slice1} media="(max-width: 699px)" />
+          <img
+            src={image1}
+            alt="사진설명"
+            className="object-cover w-full  min-h-full "
+          />
+        </picture>
+        {/* <img
           src={image1}
           alt="Slide 1"
-          className="object-cover w-full  min-h-full"
-        />
-        <div className=" absolute bottom-0 p-8 lg:p-12  " effect="fade">
+          className="object-cover w-full  min-h-full h-[1200px] rotate-45 scale-100 md:rotate-0 md:scale-100"
+        /> */}
+        <div
+          className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12  "
+          effect="fade"
+        >
           <div
             className="title lg:text-5xl text-white mb-7 text-4xl"
             data-swiper-parallax="2000"
@@ -97,7 +112,7 @@ const MySwiper = () => {
             Our newest active noise-cancelling earphones
           </div>
           <button
-            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4"
+            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
             data-swiper-parallax="2000"
           >
             Shop Now
@@ -105,7 +120,10 @@ const MySwiper = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide className="flex items-center justify-center relative">
-        <div className=" absolute bottom-0 p-8 lg:p-12 " effect="fade">
+        <div
+          className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 "
+          effect="fade"
+        >
           <div
             className="lg:text-5xl text-white mb-7 text-4xl"
             data-swiper-parallax="2000"
@@ -117,20 +135,26 @@ const MySwiper = () => {
             Never Play the Same
           </div>
           <button
-            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4"
+            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
             data-swiper-parallax="2000"
           >
             Shop Now
           </button>
         </div>
-        <img
-          src={image2}
-          alt="Slide 2"
-          className="object-cover w-full min-h-full"
-        />
+        <picture>
+          <source srcset={slice2} media="(max-width: 699px)" />
+          <img
+            src={image2}
+            alt="사진설명"
+            className="object-cover w-full  min-h-full "
+          />
+        </picture>
       </SwiperSlide>
       <SwiperSlide className="flex items-center justify-center relative">
-        <div className=" absolute bottom-0 p-8 lg:p-12 " effect="fade">
+        <div
+          className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 "
+          effect="fade"
+        >
           <div
             className="lg:text-5xl text-white mb-7 text-4xl"
             data-swiper-parallax="2000"
@@ -142,20 +166,27 @@ const MySwiper = () => {
             Perfect silence, perfect sound
           </div>
           <button
-            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4"
+            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
             data-swiper-parallax="2000"
           >
             Shop Now
           </button>
         </div>
-        <img
-          src={image3}
-          alt="Slide 3"
-          className="object-cover w-full min-h-full"
-        />
+        <picture>
+          <source srcset={slice3} media="(max-width: 699px)" />
+          <img
+            src={image3}
+            alt="사진설명"
+            className="object-cover w-full  min-h-full "
+          />
+        </picture>
       </SwiperSlide>
       <SwiperSlide className="flex items-center justify-center relative">
-        <div className=" absolute bottom-0 p-8 lg:p-12 " effect="fade" ㄴㄴ>
+        <div
+          className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 "
+          effect="fade"
+          ㄴㄴ
+        >
           <div
             className="lg:text-5xl text-white mb-7 text-4xl"
             data-swiper-parallax="2000"
@@ -166,24 +197,27 @@ const MySwiper = () => {
             Iconic design and brilliant acoustics
           </div>
           <button
-            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4"
+            className="cursor-pointer bg-white  text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
             data-swiper-parallax="2000"
           >
             Shop Now
           </button>
         </div>
-        <img
-          src={image4}
-          alt="Slide 4"
-          className="object-cover w-full min-h-full"
-        />
+        <picture>
+          <source srcset={slice4} media="(max-width: 699px)" />
+          <img
+            src={image4}
+            alt="사진설명"
+            className="object-cover w-full  min-h-full "
+          />
+        </picture>
       </SwiperSlide>
-      <div className="swiper-pagination-custom flex justify-end pr-60 ml-40 absolute z-20 md:h-12 lg:h-[4rem] xxl:h-[4.5rem]">
+      <div className="swiper-pagination-custom flex justify-end pr-60 ml-40 absolute z-20 h-10 md:h-12 lg:h-[4rem] xxl:h-[4.5rem]">
         {/* <div className="absolute">
           <div className="swiper-pagination-bullet pr-auto w-2 h-2 rounded-lg text-orange-800 inline-block m-5 mt-0 cursor-pointer mb-20 z-20"></div>
         </div> */}
       </div>
-      <div className="absolute bottom-8 right-10 z-50 lg:bottom-12 xxl:bottom-[3.5rem]">
+      <div className="absolute bottom-4 right-10 z-50 md:bottom-8 lg:bottom-12 xxl:bottom-[3.5rem]">
         <button onClick={toggleAutoplay} className="focus:outline-none">
           {isPlaying ? (
             <PauseIcon className="w-20 h-20" /> // 정지 아이콘
