@@ -61,7 +61,7 @@ const MySwiper = () => {
       parallax={true}
       effect={"fade"}
       autoplay={{
-        delay: 600000,
+        delay: 2000,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -84,39 +84,41 @@ const MySwiper = () => {
       // }
       className="w-full relative"
     >
-      <SwiperSlide className="flex items-center justify-center relative">
-        <picture>
-          <source srcset={slice1} media="(max-width: 699px)" />
-          <img
-            src={image1}
-            alt="사진설명"
-            className="object-cover w-full  min-h-full "
-          />
-        </picture>
-        {/* <img
+      <SwiperSlide
+        className="flex items-center justify-center relative"
+        effect="fade"
+      >
+        <div>
+          <picture>
+            <source srcset={slice1} media="(max-width: 699px)" />
+            <img
+              src={image1}
+              alt="사진설명"
+              className="object-cover w-full  min-h-full "
+            />
+          </picture>
+          {/* <img
           src={image1}
           alt="Slide 1"
           className="object-cover w-full  min-h-full h-[1200px] rotate-45 scale-100 md:rotate-0 md:scale-100"
         /> */}
-        <div
-          className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12  "
-          effect="fade"
-        >
-          <div
-            className="title lg:text-5xl text-white mb-7 text-4xl"
-            data-swiper-parallax="2000"
-          >
-            MW09 True Wireless Earphones
+          <div className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12  ">
+            <div
+              className="title lg:text-5xl text-white mb-7 text-4xl"
+              data-swiper-parallax=" "
+            >
+              MW09 True Wireless Earphones
+            </div>
+            <div className="text-white mb-7" data-swiper-parallax=" ">
+              Our newest active noise-cancelling earphones
+            </div>
+            <button
+              className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
+              data-swiper-parallax=" "
+            >
+              Shop Now
+            </button>
           </div>
-          <div className="text-white mb-7" data-swiper-parallax="2000">
-            Our newest active noise-cancelling earphones
-          </div>
-          <button
-            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
-            data-swiper-parallax="2000"
-          >
-            Shop Now
-          </button>
         </div>
       </SwiperSlide>
       <SwiperSlide className="flex items-center justify-center relative">
@@ -126,17 +128,17 @@ const MySwiper = () => {
         >
           <div
             className="lg:text-5xl text-white mb-7 text-4xl"
-            data-swiper-parallax="2000"
+            data-swiper-parallax=" "
           >
             MG20 Wireless Gaming
             <p>Headphones</p>
           </div>
-          <div className="text-white mb-7" data-swiper-parallax="2000">
+          <div className="text-white mb-7" data-swiper-parallax=" ">
             Never Play the Same
           </div>
           <button
             className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
-            data-swiper-parallax="2000"
+            data-swiper-parallax=" "
           >
             Shop Now
           </button>
@@ -157,17 +159,17 @@ const MySwiper = () => {
         >
           <div
             className="lg:text-5xl text-white mb-7 text-4xl"
-            data-swiper-parallax="2000"
+            data-swiper-parallax=" "
           >
             MW75 Active Noise-Cancelling
             <p>Wireless Headphones</p>
           </div>
-          <div className="text-white mb-7" data-swiper-parallax="2000">
+          <div className="text-white mb-7" data-swiper-parallax=" ">
             Perfect silence, perfect sound
           </div>
           <button
             className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
-            data-swiper-parallax="2000"
+            data-swiper-parallax=" "
           >
             Shop Now
           </button>
@@ -189,16 +191,16 @@ const MySwiper = () => {
         >
           <div
             className="lg:text-5xl text-white mb-7 text-4xl"
-            data-swiper-parallax="2000"
+            data-swiper-parallax=" "
           >
             MH40 Wireless Headphones
           </div>
-          <div className="text-white mb-7" data-swiper-parallax="2000">
+          <div className="text-white mb-7" data-swiper-parallax=" ">
             Iconic design and brilliant acoustics
           </div>
           <button
             className="cursor-pointer bg-white  text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
-            data-swiper-parallax="2000"
+            data-swiper-parallax=" "
           >
             Shop Now
           </button>
