@@ -3,7 +3,7 @@ import NavbarFix from "./components/navbar/navbarFix";
 import logo from "./img/svg/logo.svg";
 import MySwiper from "./components/myswiper/myswiper";
 import Swipe from "./components/myswiper/swiper";
-// import HeroSlider from "./components/myswiper/HeroSlider";
+import HeroSlider from "./components/myswiper/HeroSlider";
 // import Slide from "./components/myswiper/slide";
 
 import "swiper/css";
@@ -15,7 +15,7 @@ function App() {
       <NavbarBlack></NavbarBlack>
       <NavbarFix></NavbarFix>
       <MySwiper></MySwiper>
-      <Swipe></Swipe>
+      {/* <Swipe></Swipe> */}
       {/* <HeroSlider></HeroSlider> */}
       {/* <Slide></Slide> */}
       <img alt="배경" src={logo}></img>

@@ -1,107 +1,173 @@
-// import React, { useState } from "react";
-// // import image1 from "../../img/slide/slide1.jpg";
-// // import image2 from "../../img/slide/slide1.jpg";
-// // import image3 from "../../img/slide/slide1.jpg";
-// // import image4 from "../../img/slide/slide4.jpg";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectFade,
+  Parallax,
+} from "swiper/modules";
 
-// // react-id-swiper
-// import "swiper/css/swiper.css";
-// import Swiper from "react-id-swiper";
-// import "./HeroSlider.css";
-// //Images
-// const image1 =
-//   "https://images.unsplash.com/photo-1587613990051-1b291c1a7080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80";
-// const image2 =
-//   "https://images.unsplash.com/photo-1587613756197-11742e6b42ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80";
-// const image3 =
-//   "https://images.unsplash.com/flagged/photo-1566447443462-bbd3024c9439?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
+// 이미지 경로를 import
+import image1 from "../../img/slide/slide1.jpg";
+import image2 from "../../img/slide/slide2.jpg";
+import image3 from "../../img/slide/slide3.jpg";
+import image4 from "../../img/slide/slide4.jpg";
 
-// // const image1 = "../../img/slide/slide1.jpg";
-// // const image2 = "../../img/slide/slide2.jpg";
-// // const image3 = "../../img/slide/slide3.jpg";
-// // const image4 = "../../img/slide/slide4.jpg";
+// Play/Pause 아이콘 import
+import PlayIcon from "../icon/play";
+import PauseIcon from "../icon/pause";
 
-// //slider config options
+const MySwiper = () => {
+  const swiperRef = useRef(null);
 
-// const HeroSliderConfigs = {
-//   containerClass: "swiper-container hero-slider",
-//   parallax: true,
-//   centeredSlides: true,
-//   speed: 500,
-//   spaceBetween: 0,
-//   effect: "slide",
-// };
+  // 슬라이드 재생/정지 상태를 관리하는 state
+  const [isPlaying, setIsPlaying] = useState(true);
 
-// //slider component
-// const HeroSlider = () => {
-//   const [parallaxSwiper, setParallaxSwiper] = useState(null);
-//   const parallaxAmount = parallaxSwiper ? parallaxSwiper.width * 0.95 : 0;
-//   const parallaxOpacity = 0.5;
+  // 재생/정지 상태를 전환하는 함수
+  const toggleAutoplay = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      if (isPlaying) {
+        swiperRef.current.swiper.autoplay.stop(); // 슬라이드 정지
+      } else {
+        swiperRef.current.swiper.autoplay.start(); // 슬라이드 재생
+      }
+      setIsPlaying(!isPlaying); // 재생/정지 상태 토글
+    }
+  };
 
-//   return (
-//     <Swiper {...HeroSliderConfigs} getSwiper={setParallaxSwiper}>
-//       {/* 1 */}
-//       <div className="hero-slide">
-//         <div
-//           className="slide-image"
-//           data-swiper-parallax={parallaxAmount}
-//           data-swiper-parallax-opacity={parallaxOpacity}
-//         >
-//           <img src={image1} alt="image1" />
-//         </div>
-//         <div className="col-md-6 offset-md-3 my-auto text-center text-white content">
-//           <h1 className="text-uppercase mb-2 font-weight-bold"> Slide 1</h1>
-//           <p className="mb-5 small">
-//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-//             nobis sint ipsam illo atque quaerat, sed nostrum voluptates
-//             asperiores hic quidem laboriosam ducimus, molestiae dicta rerum
-//             necessitatibus in deserunt magni sapiente repellat, consectetur
-//             dolore placeat. Minima perspiciatis cupiditate quia in.
-//           </p>
-//         </div>
-//       </div>
-//       {/* 2 */}
-//       <div className="hero-slide">
-//         <div
-//           className="slide-image"
-//           data-swiper-parallax={parallaxAmount}
-//           data-swiper-parallax-opacity={parallaxOpacity}
-//         >
-//           <img src={image2} alt="image2" />
-//         </div>
-//         <div className="col-md-6 offset-md-3 my-auto text-center text-white content">
-//           <h1 className="text-uppercase mb-2 font-weight-bold"> Slide 2</h1>
-//           <p className="mb-5 small">
-//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-//             nobis sint ipsam illo atque quaerat, sed nostrum voluptates
-//             asperiores hic quidem laboriosam ducimus, molestiae dicta rerum
-//             necessitatibus in deserunt magni sapiente repellat, consectetur
-//             dolore placeat. Minima perspiciatis cupiditate quia in.
-//           </p>
-//         </div>
-//       </div>
-//       {/* 3 */}
-//       <div className="hero-slide">
-//         <div
-//           className="slide-image"
-//           data-swiper-parallax={parallaxAmount}
-//           data-swiper-parallax-opacity={parallaxOpacity}
-//         >
-//           <img src={image3} alt="image3" />
-//         </div>
-//         <div className="col-md-6 offset-md-3 my-auto text-center text-white content">
-//           <h1 className="text-uppercase mb-2 font-weight-bold"> Slide 3</h1>
-//           <p className="mb-5 small">
-//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-//             nobis sint ipsam illo atque quaerat, sed nostrum voluptates
-//             asperiores hic quidem laboriosam ducimus, molestiae dicta rerum
-//             necessitatibus in deserunt magni sapiente repellat, consectetur
-//             dolore placeat. Minima perspiciatis cupiditate quia in.
-//           </p>
-//         </div>
-//       </div>
-//     </Swiper>
-//   );
-// };
+  return (
+    <div className="relative">
+      <Swiper
+        ref={swiperRef}
+        modules={[Pagination, Autoplay, EffectFade, Parallax]}
+        direction={"horizontal"}
+        centeredSlides={true}
+        loop={true}
+        parallax={true}
+        effect={"fade"}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          bulletClass:
+            "pr-auto w-2 h-2 rounded-lg bg-gray-700 inline-block m-5 mt-0 cursor-pointer mb-20 z-20",
+          bulletActiveClass: "bg-slate-50 w-10 px-3",
+          horizontalClass: "!absolute",
+          el: ".swiper-pagination-custom", // 커스텀 클래스를 지정
+          clickable: true,
+        }}
+        className="w-full relative"
+      >
+        <SwiperSlide className="flex items-center justify-center relative">
+          <img
+            src={image1}
+            alt="Slide 1"
+            className="object-cover w-full min-h-full"
+          />
+          <div className="absolute bottom-0 p-16" effect="fade">
+            <div className="title text-5xl" data-swiper-parallax="2000">
+              MW09 True Wireless Earphones
+            </div>
+            <div className="text" data-swiper-parallax="2000">
+              Our newest active noise-cancelling earphones
+            </div>
+            <button
+              className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 z-50"
+              data-swiper-parallax="2000"
+            >
+              Shop Now
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="flex items-center justify-center relative">
+          <div className="absolute bottom-0 p-16" effect="fade">
+            <div className="title text-5xl" data-swiper-parallax="2000">
+              MG20 Wireless Gaming
+              <p>Headphones</p>
+            </div>
+            <div className="text" data-swiper-parallax="2000">
+              Never Play the Same
+            </div>
+            <button
+              className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 z-50"
+              data-swiper-parallax="2000"
+            >
+              Shop Now
+            </button>
+          </div>
+          <img
+            src={image2}
+            alt="Slide 2"
+            className="object-cover w-full min-h-full"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="flex items-center justify-center relative">
+          <div className="absolute bottom-0 p-16" effect="fade">
+            <div className="title text-5xl" data-swiper-parallax="2000">
+              MW75 Active Noise-Cancelling
+              <p>Wireless Headphones</p>
+            </div>
+            <div className="text" data-swiper-parallax="2000">
+              Perfect silence, perfect sound
+            </div>
+            <button
+              className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 z-50"
+              data-swiper-parallax="2000"
+            >
+              Shop Now
+            </button>
+          </div>
+          <img
+            src={image3}
+            alt="Slide 3"
+            className="object-cover w-full min-h-full"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="flex items-center justify-center relative">
+          <div className="absolute bottom-0 p-16" effect="fade">
+            <div className="title text-5xl" data-swiper-parallax="2000">
+              MH40 Wireless Headphones
+            </div>
+            <div className="text" data-swiper-parallax="2000">
+              Iconic design and brilliant acoustics
+            </div>
+            <button
+              className="cursor-pointer bg-black text-white w-24 h-10 text-base hover:bg-gray-700 z-50"
+              data-swiper-parallax="2000"
+            >
+              Shop Now
+            </button>
+          </div>
+          <img
+            src={image4}
+            alt="Slide 4"
+            className="object-cover w-full min-h-full"
+          />
+        </SwiperSlide>
+      </Swiper>
+      <div className="swiper-pagination-custom flex justify-end pr-5 absolute z-20 relative">
+        {/* <div className="absolute">
+          <div className="swiper-pagination-bullet pr-auto w-2 h-2 rounded-lg text-orange-800 inline-block m-5 mt-0 cursor-pointer mb-20 z-20"></div>
+        </div> */}
+      </div>
+      {/* 재생/정지 토글 버튼 */}
+      <div className="absolute top-4 right-4 z-50">
+        <button onClick={toggleAutoplay} className="focus:outline-none">
+          {isPlaying ? (
+            <PauseIcon className="w-10 h-10" /> // 정지 아이콘
+          ) : (
+            <PlayIcon className="w-10 h-10" /> // 재생 아이콘
+          )}
+        </button>
+      </div>
+    </div>
+  );
+};
 
-// export default HeroSlider;
+export default MySwiper;
