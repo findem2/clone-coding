@@ -1,16 +1,9 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import {
-  // Navigation,
-  Pagination,
-  Autoplay,
-  EffectFade,
-  Parallax,
-} from "swiper/modules";
+import { Pagination, Autoplay, EffectFade, Parallax } from "swiper/modules";
 
 // 이미지 경로를 import
 import image1 from "../../img/slide/slide1.jpg";
@@ -25,11 +18,6 @@ import slice3 from "../../img/slide/700-3.webp";
 import slice4 from "../../img/slide/700-4.webp";
 
 const MySwiper = () => {
-  // const pagination = {
-  //   clickable: true,
-  //   bulletClass: "w-4 h-4 rounded-lg bg-black inline-block",
-  //   bulletActiveClass: "bg-red-500 w-20",
-  // };
   const swiperRef = useRef(null);
 
   // 슬라이드 재생/정지 상태를 관리하는 state
@@ -50,193 +38,101 @@ const MySwiper = () => {
   return (
     <Swiper
       modules={[Pagination, Autoplay, EffectFade, Parallax]}
-      // dir="rtl"
       ref={swiperRef}
-      autoplayPause={true}
-      autoplayResume={true}
       allowTouchMove={false}
-      direction={"horizontal"}
-      centeredSlides={true}
       loop={true}
       parallax={true}
       effect={"fade"}
       autoplay={{
         delay: 1000,
-        disableOnInteraction: false,
       }}
       pagination={{
         bulletClass:
-          " pr-auto w-2 h-2 rounded-lg bg-gray-700 inline-block m-3 mt-0 cursor-pointer mb-16 z-20",
+          " pr-auto w-2 h-2 rounded-lg bg-gray-700 m-3 mt-0 cursor-pointer mb-16",
         bulletActiveClass: "bg-slate-50 w-10 px-3",
-        // horizontalClass: "!absolute",
-        el: ".swiper-pagination-custom", // 커스텀 클래스를 지정
+        el: ".swiper-pagination-custom",
         clickable: true,
-        // bulletClass: "swiper-pagination-bullet",
-        // bulletActiveClass: "swiper-pagination-bullet-active",
       }}
-      // navigation={
-      //   {
-      //     // nextEl: ".swiper-button-next",
-      //     // prevEl: ".swiper-button-prev",
-      //     // pasueEl: ".swiper-button-pasue",
-      //     // resumeEl: ".swiper-button-resume",
-      //   }
-      // }
       className="w-full relative"
     >
-      <SwiperSlide
-        className="flex items-center justify-center relative"
-        effect="fade"
-      >
+      <SwiperSlide className=" flex relative">
         <div>
           <picture>
             <source srcset={slice1} media="(max-width: 699px)" />
-            <img
-              src={image1}
-              alt="사진설명"
-              className="object-cover w-full  min-h-full "
-            />
+            <img src={image1} alt="사진변환" />
           </picture>
-          {/* <img
-          src={image1}
-          alt="Slide 1"
-          className="object-cover w-full  min-h-full h-[1200px] rotate-45 scale-100 md:rotate-0 md:scale-100"
-        /> */}
-          <div className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12  ">
-            <div
-              className="title lg:text-5xl text-white mb-7 text-4xl"
-              data-swiper-parallax=" "
-            >
+          <div className="absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12  ">
+            <div className="lg:text-5xl text-white mb-7 text-4xl">
               MW09 True Wireless Earphones
             </div>
-            <div className="text-white mb-7" data-swiper-parallax=" ">
+            <div className="text-white mb-7">
               Our newest active noise-cancelling earphones
             </div>
-            <button
-              className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
-              data-swiper-parallax=" "
-            >
+            <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold">
               Shop Now
             </button>
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center relative">
-        <div
-          className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 "
-          effect="fade"
-        >
-          <div
-            className="lg:text-5xl text-white mb-7 text-4xl"
-            data-swiper-parallax=" "
-          >
+      <SwiperSlide className=" flex relative">
+        <div className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 ">
+          <div className="lg:text-5xl text-white mb-7 text-4xl">
             MG20 Wireless Gaming
             <p>Headphones</p>
           </div>
-          <div className="text-white mb-7" data-swiper-parallax=" ">
-            Never Play the Same
-          </div>
-          <button
-            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
-            data-swiper-parallax=" "
-          >
+          <div className="text-white mb-7">Never Play the Same</div>
+          <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold">
             Shop Now
           </button>
         </div>
         <picture>
           <source srcset={slice2} media="(max-width: 699px)" />
-          <img
-            src={image2}
-            alt="사진설명"
-            className="object-cover w-full  min-h-full "
-          />
+          <img src={image2} alt="사진변환" />
         </picture>
       </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center relative">
-        <div
-          className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 "
-          effect="fade"
-        >
-          <div
-            className="lg:text-5xl text-white mb-7 text-4xl"
-            data-swiper-parallax=" "
-          >
+      <SwiperSlide className=" flex relative">
+        <div className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 ">
+          <div className="lg:text-5xl text-white mb-7 text-4xl">
             MW75 Active Noise-Cancelling
             <p>Wireless Headphones</p>
           </div>
-          <div className="text-white mb-7" data-swiper-parallax=" ">
-            Perfect silence, perfect sound
-          </div>
-          <button
-            className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
-            data-swiper-parallax=" "
-          >
+          <div className="text-white mb-7">Perfect silence, perfect sound</div>
+          <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold">
             Shop Now
           </button>
         </div>
         <picture>
           <source srcset={slice3} media="(max-width: 699px)" />
-          <img
-            src={image3}
-            alt="사진설명"
-            className="object-cover w-full  min-h-full "
-          />
+          <img src={image3} alt="사진변환" />
         </picture>
       </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center relative">
-        <div
-          className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 "
-          effect="fade"
-          ㄴㄴ
-        >
-          <div
-            className="lg:text-5xl text-white mb-7 text-4xl"
-            data-swiper-parallax=" "
-          >
+      <SwiperSlide className=" flex relative">
+        <div className=" absolute bottom-0 pb-16 pl-5 md:p-8 lg:p-12 " ㄴㄴ>
+          <div className="lg:text-5xl text-white mb-7 text-4xl">
             MH40 Wireless Headphones
           </div>
-          <div className="text-white mb-7" data-swiper-parallax=" ">
+          <div className="text-white mb-7">
             Iconic design and brilliant acoustics
           </div>
-          <button
-            className="cursor-pointer bg-white  text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold"
-            data-swiper-parallax=" "
-          >
+          <button className="cursor-pointer bg-white  text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold">
             Shop Now
           </button>
         </div>
         <picture>
           <source srcset={slice4} media="(max-width: 699px)" />
-          <img
-            src={image4}
-            alt="사진설명"
-            className="object-cover w-full  min-h-full "
-          />
+          <img src={image4} alt="사진변환" />
         </picture>
       </SwiperSlide>
-      <div className="swiper-pagination-custom flex justify-end pr-60 ml-40 absolute z-20 h-10 md:h-12 lg:h-[4rem] xxl:h-[4.5rem]">
-        {/* <div className="absolute">
-          <div className="swiper-pagination-bullet pr-auto w-2 h-2 rounded-lg text-orange-800 inline-block m-5 mt-0 cursor-pointer mb-20 z-20"></div>
-        </div> */}
-      </div>
-      <div className="absolute bottom-4 right-10 z-50 md:bottom-8 lg:bottom-12 xxl:bottom-[3.5rem]">
-        <button onClick={toggleAutoplay} className="focus:outline-none">
+      <div className="swiper-pagination-custom flex justify-end pr-80 ml-60 absolute z-20 h-10 md:h-12 lg:h-[4rem] xxl:h-[4.5rem]"></div>
+      <div className="absolute bottom-4 right-10 z-50 md:bottom-6 lg:bottom-[2.5rem] xxl:bottom-[3rem]">
+        <button onClick={toggleAutoplay}>
           {isPlaying ? (
-            <PauseIcon className="w-20 h-20" /> // 정지 아이콘
+            <PauseIcon className="w-20 h-20" />
           ) : (
-            <PlayIcon className="w-20 h-20" /> // 재생 아이콘
+            <PlayIcon className="w-20 h-20" />
           )}
         </button>
       </div>
-
-      {/* Navigation buttons */}
-      {/* <div className="swiper-button-next text-white bg-black p-2 rounded-full"></div>
-      <div className="swiper-button-prev text-white bg-black p-2 rounded-full"></div> */}
-      {/* <div className="swiper-button-pasue text-white bg-black p-2 rounded-full"></div>
-      <div className="swiper-button-resume text-white bg-red-700 p-2 rounded-full"></div> */}
-
-      {/* <button class="autoplayPause ">정지</button>
-      <button class="autoplayResume">시작</button> */}
     </Swiper>
   );
 };

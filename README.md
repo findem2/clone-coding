@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# 개인프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 메인사이트의 프론트 클론코딩후 GitActions & AWS EC2를 이용한배포
 
-## Available Scripts
+## [원본 사이트](https://www.masterdynamic.com/)
 
-In the project directory, you can run:
+## [지금 구현중인 주소](http://ec2-13-211-167-18.ap-southeast-2.compute.amazonaws.com/)
 
-### `npm start`
+## [프로젝트의 진도(깃허브 주소)](https://github.com/findem2/clone-coding)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 24.08.19(월)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 메인사이트 컴포넌트 나누기
 
-### `npm test`
+### 24.08.20(화)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-
 
-### `npm run build`
+### 24.08.21(수)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- navbarBlack 적용
+- 반응형 navbarFix 적용
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 24.08.22(목)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Swiper를 이용한 메인페이지 슬라이드 작업(진행중)
 
-### `npm run eject`
+### 24.08.23(금)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 슬라이드에서 해야할것들
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. 슬라이드 play pause 버튼
+2. 슬라이드 블릿 오른쪽에서 왼쪽으로 넘가는게 아니라가 왼쪽에서 오른쪽으로 넘어가게하기
+3. 버튼의 영역이 가려지는걸 치우게
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 24.08.26(월)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 슬라이드가 완성 된줄 알았으나 슬라이드 넘어갈때 내용이랑 이미지랑 따로 넘어가서 수정
+- 슬라이드 기능을 구현하는데 필요없는 기능들이 많이 들어 있는거 같아 수정
+- Featured Products 작성

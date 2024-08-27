@@ -1,4 +1,4 @@
 function ColorDot() {
-  return <div className="w-10 h-10 rounded-full bg-gray-500"></div>;
+  return <div className="w-5 h-5 rounded-full bg-gray-500 m-1"></div>;
 }
 export default ColorDot;
