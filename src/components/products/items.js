@@ -5,7 +5,7 @@ import HoverImg1 from "../../img/feature/MW09BL4-PDP_1350x1350_Angle_Right (2).p
 function Items() {
   return (
     <div className="custom:w-1/4">
-      <div className="relative opacity-100  w-[319px] h-[319px] ">
+      <div className="relative opacity-100 ">
         <img src={img1} alt="before" />
         <img
           src={HoverImg1}

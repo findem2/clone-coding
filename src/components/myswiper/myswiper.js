@@ -48,7 +48,7 @@ const MySwiper = () => {
       }}
       pagination={{
         bulletClass:
-          " pr-auto w-2 h-2 rounded-lg bg-gray-700 m-3 mt-0 cursor-pointer mb-16",
+          " pr-auto w-2 h-2 rounded-lg bg-gray-700 m-2 mt-0 cursor-pointer mb-16",
         bulletActiveClass: "bg-slate-50 w-10 px-3",
         el: ".swiper-pagination-custom",
         clickable: true,
@@ -123,7 +123,7 @@ const MySwiper = () => {
           <img src={image4} alt="사진변환" />
         </picture>
       </SwiperSlide>
-      <div className="swiper-pagination-custom flex justify-end pr-80 ml-60 absolute z-20 h-10 md:h-12 lg:h-[4rem] xxl:h-[4.5rem]"></div>
+      <div className="swiper-pagination-custom flex justify-end pr-20 md:pr-80 md:ml-60 absolute z-20 h-10 md:h-12 lg:h-[4rem] xxl:h-[4.5rem]"></div>
       <div className="absolute bottom-4 right-10 z-50 md:bottom-6 lg:bottom-[2.5rem] xxl:bottom-[3rem]">
         <button onClick={toggleAutoplay}>
           {isPlaying ? (
