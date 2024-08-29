@@ -2,7 +2,7 @@ import logo from "../../img/svg/logo.svg";
 
 function NavbarFix() {
   return (
-    <div className="z-50 flex min-h-14 justify-between py-2  sticky top-0 bg-white w-full sm:bg-red-500 sm:px-5 md:bg-gray-500 md:px-10 lg:bg-blue-500  xl:bg-orange-500 xxl:bg-pink-500 custom:flex">
+    <div className="z-50 flex min-h-14 justify-between py-2  sticky top-0 bg-white w-full sm:bg-red-500 sm:px-5 md:bg-gray-500 md:px-10 lg:bg-blue-500  xl:bg-orange-500 xl:px-12 xxl:bg-pink-500 custom:flex">
       <div className="flex items-center justify-center xl:hidden sm:inline-flex ">
         <div className="flex items-center justify-center  xl:hidden mr-1 cursor-pointer">
           <svg
@@ -51,7 +51,7 @@ function NavbarFix() {
         <img
           alt="logo"
           class="logo"
-          className="md:min-w-56 max-w-56 min-h-8 max-h-8 sm:max-w-40 max-h-6"
+          className="md:min-w-56 max-w-56 min-h-8 sm:max-w-40 max-h-6"
           src={logo}
         ></img>
       </div>
@@ -145,7 +145,7 @@ function NavbarFix() {
             strokeLinecap="round"
           ></path>
         </svg>
-        <div className="hidden lg:inline mr-3 cursor-pointer">AT^</div>
+        <div className="hidden lg:inline cursor-pointer">AT^</div>
         <div className="">
           <button className="hidden xxl:inline bg-black text-white w-24 h-10 text-base hover:bg-gray-700 ">
             support

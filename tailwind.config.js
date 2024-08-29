@@ -9,6 +9,8 @@ module.exports = {
       xl: "1220px",
       xxl: "1400px",
       custom: "1200px",
+      Reactdot: "",
+      Craftsmanship: "1479",
     },
     extend: {
       keyframes: {

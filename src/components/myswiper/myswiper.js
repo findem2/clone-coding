@@ -68,7 +68,7 @@ const MySwiper = () => {
             <div className="text-white mb-7">
               Our newest active noise-cancelling earphones
             </div>
-            <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold">
+            <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-gray-700">
               Shop Now
             </button>
           </div>
@@ -81,7 +81,7 @@ const MySwiper = () => {
             <p>Headphones</p>
           </div>
           <div className="text-white mb-7">Never Play the Same</div>
-          <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold">
+          <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-gray-700">
             Shop Now
           </button>
         </div>
@@ -97,7 +97,7 @@ const MySwiper = () => {
             <p>Wireless Headphones</p>
           </div>
           <div className="text-white mb-7">Perfect silence, perfect sound</div>
-          <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold">
+          <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-gray-700">
             Shop Now
           </button>
         </div>
@@ -114,7 +114,7 @@ const MySwiper = () => {
           <div className="text-white mb-7">
             Iconic design and brilliant acoustics
           </div>
-          <button className="cursor-pointer bg-white  text-blacktext-base hover:bg-gray-700 px-8 py-4 text-sm font-semibold">
+          <button className="cursor-pointer bg-white  text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-gray-700">
             Shop Now
           </button>
         </div>
@@ -123,8 +123,8 @@ const MySwiper = () => {
           <img src={image4} alt="사진변환" />
         </picture>
       </SwiperSlide>
-      <div className="swiper-pagination-custom flex justify-end pr-20 md:pr-80 md:ml-60 absolute z-20 h-10 md:h-12 lg:h-[4rem] xxl:h-[4.5rem]"></div>
-      <div className="absolute bottom-4 right-10 z-50 md:bottom-6 lg:bottom-[2.5rem] xxl:bottom-[3rem]">
+      <div className="swiper-pagination-custom flex justify-end pr-24 md:pr-[21rem] md:ml-60 absolute z-20 h-10 md:h-12 lg:h-[4rem] xxl:h-[4.5rem]"></div>
+      <div className="absolute bottom-4 right-12 z-50 md:bottom-6 lg:bottom-[2.5rem] xxl:bottom-[3rem]">
         <button onClick={toggleAutoplay}>
           {isPlaying ? (
             <PauseIcon className="w-20 h-20" />

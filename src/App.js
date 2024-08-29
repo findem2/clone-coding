@@ -5,6 +5,9 @@ import MySwiper from "./components/myswiper/myswiper";
 // import Swipe from "./components/myswiper/swiper";
 // import HeroSlider from "./components/myswiper/HeroSlider";
 // import Slide from "./components/myswiper/slide";
+import Trinity from "./components/trinity/trinity";
+import Crafts from "./components/craftsmanship/crafts";
+import Bugatti from "./components/bugatti/bugatti";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,114 +23,9 @@ function App() {
       {/* <HeroSlider></HeroSlider> */}
       {/* <Slide></Slide> */}
       <ProdectLine></ProdectLine>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
+      <Trinity></Trinity>
+      <Crafts></Crafts>
+      <Bugatti></Bugatti>
       <img alt="배경" src={logo}></img>
       <img alt="배경" src={logo}></img>
       <img alt="배경" src={logo}></img>
