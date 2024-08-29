@@ -9,7 +9,7 @@ const Bugatti = () => {
           <div>BUGATTI</div>
           <div>Uniting performance And Luxury</div>
           <button className="cursor-pointer bg-white text-blacktext-base hover:bg-gray-200 px-8 py-4 text-sm font-semibold text-gray-700">
-            Discover More
+            Discover
           </button>
         </div>
       </div>
