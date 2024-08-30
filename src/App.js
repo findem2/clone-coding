@@ -12,6 +12,7 @@ import Bugatti from "./components/bugatti/bugatti";
 import "swiper/css";
 import "swiper/css/pagination";
 import ProdectLine from "./components/products/productsline";
+import Connect from "./components/M&D Connect/connect";
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
       <ProdectLine></ProdectLine>
       <Trinity></Trinity>
       <Crafts></Crafts>
+      <div className="h-6"></div>
       <Bugatti></Bugatti>
+      <Connect></Connect>
       <img alt="배경" src={logo}></img>
       <img alt="배경" src={logo}></img>
       <img alt="배경" src={logo}></img>

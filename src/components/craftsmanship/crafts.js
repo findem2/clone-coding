@@ -16,20 +16,20 @@ const Craftsmanship = () => {
         </div>
       </div>
       <div className="flex max-h-72 ">
-        <div className="flex relative w-1/3 pr-6">
-          <img src={sound} alt="" className="w-s"></img>
+        <div className="flex relative w-1/3 pr-6 max-h-72 overflow-hidden">
+          <img src={sound} alt="" className="hover:scale-125 "></img>
           {/* <div className=" absolute text-3xl right-20 bottom-16 text-white">
             SOUND
           </div> */}
         </div>
-        <div className="flex relative w-1/3 pr-6">
-          <img src={materials} alt="" className=""></img>
+        <div className="flex relative w-1/3 pr-6 max-h-72 overflow-hidden">
+          <img src={materials} alt="" className="hover:scale-125"></img>
           {/* <div className=" absolute text-3xl right-20 bottom-16 text-white">
             MATERIALS
           </div> */}
         </div>
-        <div className="flex relative w-1/3">
-          <img src={design} alt="" className=""></img>
+        <div className="flex relative w-1/3 max-h-72 overflow-hidden">
+          <img src={design} alt="" className="hover:scale-125"></img>
           {/* <div className=" absolute text-3xl right-20 bottom-16 text-white">
             DESIGN
           </div> */}

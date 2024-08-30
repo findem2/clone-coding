@@ -7,7 +7,7 @@ import effect1 from "../../img/card/MD_MH40-W_Homepage_Mobile-V1.webp";
 
 const Trinity = () => {
   return (
-    <div className="p-5 md:p-10 lg:p-12 pt-0 pb-6">
+    <div className="p-5 md:p-10 lg:p-12 pt-0 md:pt-0 lg:pt-0 pb-6 md:pb-6 lg:pb-6">
       <div className="md:flex pb-4 md:pb-3 lg:pb-6">
         <div className="pb-4 md:pb-0 md:pr-3 lg:pr-6 relative">
           <picture>
@@ -78,3 +78,19 @@ const Trinity = () => {
 };
 
 export default Trinity;
+
+// after
+// after:absolute after:scale-x-0 after:origin-bottom-left after:border-b after:w-100% after:h-0
+// hover:after:origin-bottom-right hover:after:scale-x-1
+
+// scale:{
+//   "0%" :{
+//     opacity: "0"
+//     transform: "translate3d(-100%, 0, 0)"
+// },
+// "100%":{
+//     opacity: "1"
+//     transform: "translateZ(0)"
+// }
+// }
+// },

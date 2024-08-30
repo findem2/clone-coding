@@ -14,6 +14,16 @@ module.exports = {
     },
     extend: {
       keyframes: {
+        scale: {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+
+          "100%": {
+            transform: "translateX(100%)",
+            width: "0",
+          },
+        },
         fadein: {
           "0%": {
             opacity: "0",
@@ -45,8 +55,22 @@ module.exports = {
       animation: {
         fadein: "fadein 0.5s",
         fadeout: "fadeout 0.5s",
+        scale: "scale 1s",
       },
     },
   },
   plugins: [],
 };
+
+// "0%": {
+//   opacity: "0",
+//   transform: "translate3d(-100%, 50%,0)",
+// },
+// "50%": {
+//   opacity: "0.5",
+//   transform: "translateZ(0)",
+// },
+// "100%": {
+//   opacity: "1",
+//   transform: "translateZ(0)",
+// },
