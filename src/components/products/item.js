@@ -14,7 +14,7 @@ const Item = () => {
   // elems=a.map(str) retur<ColorDot data = str />
 
   return (
-    <div className="flex ">
+    <div className="flex overflow-x-scroll">
       <div className="custom:w-1/4 pr-5">
         <div className="relative opacity-100 cursor-pointer ">
           <img src={img1} alt="before" />

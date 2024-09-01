@@ -1,6 +1,5 @@
 import NavbarBlack from "./components/navbar/navbarBlack";
 import NavbarFix from "./components/navbar/navbarFix";
-import logo from "./img/svg/logo.svg";
 import MySwiper from "./components/myswiper/myswiper";
 // import Swipe from "./components/myswiper/swiper";
 // import HeroSlider from "./components/myswiper/HeroSlider";
@@ -13,6 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import ProdectLine from "./components/products/productsline";
 import Connect from "./components/M&D Connect/connect";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -29,18 +29,7 @@ function App() {
       <div className="h-6"></div>
       <Bugatti></Bugatti>
       <Connect></Connect>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
-      <img alt="배경" src={logo}></img>
+      <Footer></Footer>
     </div>
   );
 }
