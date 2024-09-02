@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="pb-5 flex">
               <input
                 type="checkbox"
-                className="w-5 h-5 border-white rounded-sm bg-black border-[1px] p-2 appearance-none checked:bg-black checked:bg-gradient-to-[data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e] hover:border-black"
+                className="w-5 h-5 border-white rounded-sm bg-black border-[1px] p-2 appearance-none checked:bg-black checked:text-white hover:border-black checked:content-['V']"
               ></input>
               <div className="pl-3 text-sm font-thin cursor-pointer">
                 By checking this box you are agreeing to receive brand updates,
@@ -34,9 +34,9 @@ const Footer = () => {
               SUBMIT
             </button>
           </div>
-          <div className="custom:flex custom:w-1/2 custom:justify-center custom:items-center custom:pl-32">
+          <div className="custom:w-1/2 custom:flex custom:justify-center custom:items-center custom:pl-32">
             <div className="custom:w-1/3">
-              <div className="pt-8 custom:pt-0 pb-5  font-semibold ">
+              <div className="pt-8 custom:pt-0 pb-5  font-semibold custom:flex custom:justify-center custom:items-center">
                 Help & Info
               </div>
               <div className="custom:hidden w-full bg-gray-600 pb-[1px] mb-3 cursor-pointer"></div>
@@ -51,7 +51,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="custom:w-1/3">
-              <div className="pb-5 font-semibold">About</div>
+              <div className="pb-5 font-semibold custom:flex custom:justify-center custom:items-center">
+                About
+              </div>
               <div className="custom:hidden w-full bg-gray-600 pb-[1px] mb-3"></div>
               <div className="hidden custom:inline-block custom:pb-5 font-extraligh cursor-pointer">
                 About Us
@@ -63,8 +65,10 @@ const Footer = () => {
                 Contact Us
               </div>
             </div>
-            <div className="custom:w-1/3">
-              <div className=" pb-5 font-semibold">Gifting</div>
+            <div className="custom:w-1/3 pb-12">
+              <div className=" pb-5 font-semibold custom:flex custom:justify-center custom:items-center">
+                Gifting
+              </div>
               <div className="hidden custom:inline-block custom:pb-5 font-extralight cursor-pointer">
                 Corporate Gifting
               </div>

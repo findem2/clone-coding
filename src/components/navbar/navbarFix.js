@@ -2,7 +2,7 @@ import logo from "../../img/svg/logo.svg";
 
 function NavbarFix() {
   return (
-    <div className="z-50 flex min-h-14 justify-between py-2  sticky top-0 bg-white w-full custom:flex">
+    <div className="z-50 flex min-h-14 justify-between py-2  sticky top-0 bg-white w-full sm:px-5 md:px-10 xl:px-12 custom:flex">
       <div className="flex items-center justify-center xl:hidden sm:inline-flex ">
         <div className="flex items-center justify-center  xl:hidden mr-1 cursor-pointer">
           <svg
@@ -59,13 +59,13 @@ function NavbarFix() {
         <div className="flex items-center justify-center ">
           <div className="flex items-center justify-center ">
             <div className="mx-5 cursor-pointer hover:text-gray-700">
-              HEADPHONESV{" "}
+              HEADPHONES^{" "}
             </div>
             <div className="mx-5 cursor-pointer hover:text-gray-700">
-              EARPHONESV{" "}
+              EARPHONES^{" "}
             </div>
             <div className="mx-5 cursor-pointer hover:text-gray-700">
-              ACCESSORIESV{" "}
+              ACCESSORIES^{" "}
             </div>
             <div className="mx-5 cursor-pointer hover:text-gray-700">
               COLLABORATIONS
@@ -145,7 +145,7 @@ function NavbarFix() {
             strokeLinecap="round"
           ></path>
         </svg>
-        <div className="hidden lg:inline cursor-pointer">ATV</div>
+        <div className="hidden lg:inline cursor-pointer">AT^</div>
         <div className="">
           <button className="hidden xxl:inline bg-black text-white w-24 h-10 text-base hover:bg-gray-700 ">
             support
